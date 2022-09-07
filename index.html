@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index.js" />
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">Game review</a></li>
+        <li><a href="#section3">suggestions</a></li>
+        <li><a href="#section4">About</a></li>
+    </ul>
+    </nav>
+    <div id = "section1">
+        <h1>Home section</h1>
+        <p> THis website is</p>
+    </div>
+    <div id = "section2">
+        <h1>game review section</h1>
+        <ul>
+            <li>Destiny 2 is a first-person shooter game that incorporates role-playing and massively multiplayer online game (MMO) elements. The original Destiny includes on-the-fly matchmaking that allowed players to communicate only with other players with whom they were "matched" by the game</li><img src="destiny2.jpeg" alt="Destiny 2">
+            <div class = "star_rating">
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+            </div><br>
+            <img src="Batman.jpeg" alt="Batman Arkham Asylum"><li>Batman Arkham City is the sequel to the 2009 video game Batman: Arkham Asylum. </li>
+            <div class = "star_rating">
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+            </div><br>
+            <li>Assassins Creed 2</li><img src="Assassins.jpeg" alt="Assassins Creed">
+            <div class = "star_rating">
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+            </div>
+            <br><br>
+            <li>Tekken 7</li><img src="tekken.jpeg" alt="Tekken 7">
+            <div class = "star_rating">
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+                <button class ="star">&#9734;</button>
+            </div><br>
+        </ul>
+    </div>
+    <div id = "section3">
+        <h1>suggestion section</h1>
+        <form onsubmit="event.preventDefault(); validateForm()">
+        <label for = "name">Name:</label>
+            <input type="text" placeholder="Full Name">
+            <small class="error"></small>
+        
+            <label for = "email">Email:</label>
+            <input type="email" placeholder="Email address">
+            <small class="error"></small>
+        
+        <label for="message">Message:</label>
+        <textarea id="suggestion" cols="15" rows="5" placeholder="Enter your suggesstion"></textarea>
+        <small class="error"></small>
+
+        <div class="center">
+            <input type="submit" value="Send">
+            <p id="success"></p>
+        </div>
+        
+    </form>
+    </div>
+    <div id = "section4">
+        <h1>About section</h1>
+    </div>
+</body>
+</html>

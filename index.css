@@ -1,0 +1,156 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url("gaming-background.jpeg");
+	height: 100vh;
+	-webkit-background-size:cover;
+	background-size:cover;
+	position:  relative;
+  }
+
+nav{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li{
+    float: left;
+    color: #fff;
+}
+a{
+    padding: 20px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1{
+    color: #fff;
+}
+
+#section1{
+    height: 700px;
+    width: 100%;
+    display: inline-block;
+}
+
+#section2{
+    height: 700px;
+    width: 100%;
+    display: inline-block;
+}
+
+#section3{
+    height: 700px;
+    width: 100%;
+    display: inline-block;
+}
+
+#section4{
+    height: 700px;
+    width: 100%;
+    display: inline-block;
+}
+
+/* button */
+.star_rating{
+    user-select: none;
+}
+
+.star_rating input{
+    display: none;
+}
+
+.star_rating label{
+    display: none;
+}
+
+.star{
+    font-size: 3rem;
+    color: #ff9800;
+    background-color: unset;
+    border: none;
+}
+
+.star:hover{
+    cursor: pointer;
+}
+
+/* form */
+
+form{
+    max-width: 550px;
+    width: 90%;
+    margin: 17vh auto 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+input[type="text"]:focus, textarea:focus{
+    border-bottom: 1px solid;
+
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+.center{
+text-align: center;
+}
+
+input[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.error{
+    color: red;
+}
+
+.error-border{
+    border-bottom: 1px solid red;
+}
+
+.success{
+    color: green;
+}
